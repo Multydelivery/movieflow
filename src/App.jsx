@@ -24,7 +24,7 @@ const App = () => {
   const [movieList, setMovieList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
-  const [trendingMovies, setTrendingMovies] = useState('') // useDebounce is a custom hook that delays the update of the search term by 500ms
+  const [trendingMovies, setTrendingMovies] = useState([]) // useDebounce is a custom hook that delays the update of the search term by 500ms
 
   useDebounce(() => {
     setDebouncedSearchTerm(searchTerm);
